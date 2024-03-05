@@ -1,0 +1,41 @@
+// install django 
+pipenv install django
+
+// activate Django 
+pipenv shell
+
+------
+pipenv --venv
+
+----- create project
+django-admin startproject projectname
+    django-admin startproject projectname . 
+
+---
+python manage.py runserver
+
+
+render function
+ redirect pages which comesfrom requests 
+
+httpresponse function
+    returns a response text of requests
+
+urls.py
+
+    - path function 1 = url name , 2 = function or include path for url 
+
+
+{% csrf_token %} 
+    - used in post method 
+
+settings.py  
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
+
+python manage.py makemigrations
+python manage.py 
+
+
+Abstract User 
+
+Email Verification

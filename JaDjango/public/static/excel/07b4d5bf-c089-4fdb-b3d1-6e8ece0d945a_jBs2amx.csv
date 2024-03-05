@@ -1,0 +1,5 @@
+id,subject,name,marks
+1,"OrderedDict({'id': 1, 'subject': 'maths'})",12,21.0
+2,"OrderedDict({'id': 2, 'subject': 'gujarati'})",am,2.0
+3,"OrderedDict({'id': 1, 'subject': 'maths'})",qads,47.0
+4,"OrderedDict({'id': 3, 'subject': 'English'})",scsx,11.0

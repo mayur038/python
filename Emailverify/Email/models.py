@@ -12,9 +12,11 @@ class Custom_user(models.Model):
     E_varify = models.BooleanField(default=False)
     Key = models.CharField(max_length = 6,default = 000000)
 
-@receiver(post_save,sender=Custom_user)
-def send_mail_token(sender,instance,created,**kwargs):
-    try:
-        send_mail()
-    except Exception as e:
-        print(e)
+
+
+# @receiver(post_save,sender=Custom_user)
+# def send_mail_token(sender,instance,created,**kwargs):
+#     try:
+#         send_mail(n  )
+#     except Exception as e:
+#         print(e)

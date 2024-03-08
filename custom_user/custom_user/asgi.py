@@ -1,5 +1,5 @@
 """
-ASGI config for abuser project.
+ASGI config for custom_user project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'abuser.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'custom_user.settings')
 
 application = get_asgi_application()

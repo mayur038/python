@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import *
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 
 class Registerserializer(serializers.ModelSerializer):
@@ -32,8 +33,3 @@ class StudentSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({'error':'qwewq'})
         
         return data
-
-class registerserializer(serializers.Serializer):
-    class Meta:
-        models = User
-        fields = ['phone','password']
